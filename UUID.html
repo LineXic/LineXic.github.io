@@ -1,0 +1,138 @@
+<!DOCTYPE html> 
+ <head> 
+     <meta charset="utf-8"> 
+     <meta name="viewport" content="width=device-width, initial-scale=1"> 
+     <title>UUID在线生成</title> 
+     <meta name="keywords" content="UUID在线生成,一键生成UUID,UUID快速生成,永久UUID,苦力怕论坛,我的世界" /> 
+     <meta name="description" content="这是一个UUID在线免费生成的工具网页, Minecraft(我的世界)苦力怕论坛" /> 
+     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css"> 
+     <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css"> 
+     <!--<link rel="stylesheet" href="css/style.css">--> 
+ </head> 
+  
+ <body> 
+     <br /> 
+     <div class="container"> 
+         <h3><a href="javascript:history.back();" class="text-dark text-decoration-none"><i class="fa fa-arrow-left"></i></a>&nbsp;UUID在线生成</h3> 
+         <hr /> 
+     <div class="alert alert-info" role="alert"> 
+         <span id="tsText">本页面用于生成我的世界材质、行为等资源配置文件中的UUID！</span> 
+     </div> 
+     <textarea class="form-control" id="Text" readonly rows="8"></textarea> 
+     <!--Pages By Klpbbs--> 
+     <button type="button" class="btn btn-primary btn-block mt-2 " id="copy" onclick="copyText()"> 
+         复制文本框中的UUID 
+     </button> 
+     <!--Pages By Klpbbs--> 
+     <button type="button" class="btn btn-primary btn-block mt-2" onclick="getUUID(1,'已生成1组UUID')"> 
+         在线生成一组UUID 
+     </button> 
+     <!--Pages By Klpbbs--> 
+     <button type="button" class="btn btn-primary btn-block mt-2" onclick="getUUID(4,'已生成4组UUID')"> 
+         在线生成四组UUID 
+     </button> 
+     <button type="button" class="btn btn-primary btn-block mt-2" onclick="getUUID(114514,'已生成4组UUID')" disabled> 
+         在线生成114514组UUID 
+     </button> 
+     <!-- Button trigger modal --> 
+     <button type="button" class="btn btn-primary btn-block mt-2 mb-2" data-toggle="modal" data-target="#exampleModal" disabled> 
+         更多操作选项 
+     </button> 
+     <div class="row"> 
+             <div class="col"> 
+                 <a class="text-decoration-none" href="javascript:history.back();"><button type="button" class="btn btn-outline-primary btn-block"><i class="fa fa-arrow-left" aria-hidden="true"></i> 返回上一页</button></a> 
+             </div> 
+             <div class="col"> 
+                 <a class="text-decoration-none" href="/"><button type="button" class="btn btn-outline-primary btn-block"><i class="fa fa-home" aria-hidden="true"></i> 返回首页</button></a> 
+             </div> 
+         </div> 
+     </div> 
+      <!-- Modal --> 
+     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+         <div class="modal-dialog"> 
+             <div class="modal-content"> 
+                 <div class="modal-header"> 
+                     <h5 class="modal-title" id="exampleModalLabel">更多操作选项</h5> 
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"> 
+                         <span aria-hidden="true">&times;</span> 
+                     </button> 
+                 </div> 
+                 <div class="modal-body"> 
+                     <button type="button" class="btn btn-primary btn-block mt-2" id="copy" onclick="textSplit()"> 
+                         分节复制(UUID2组+) 
+                     </button> 
+                     更多待添加 
+                 </div> 
+             </div> 
+         </div> 
+     </div> 
+     <script> 
+         function textSplit(){ 
+             var text = document.getElementById('Text'); 
+             var str = text.innerHTML; 
+             var strs = new Array(); 
+             strs = str.split(/[\s\n]/); 
+             for (i = 0; i < strs.length - 1; i++){ 
+                 copyText(strs[i]); 
+             } 
+             $("#exampleModal").modal('hide'); 
+         } 
+         var jc = 0; 
+         function getUUID(times,TS){ 
+             document.getElementById('Text').innerHTML = ""; 
+             if (times == 1){ 
+                 var uuidData = generateUUID(); 
+                 var YText = document.getElementById('Text'); 
+                 YText.innerHTML = uuidData; 
+             }else{ 
+                 for (i = 0; i < times; i++) { 
+                     var uuidData = generateUUID(); 
+                     var YText = document.getElementById('Text'); 
+                     YText.innerHTML = uuidData + "\n" + YText.innerHTML; 
+                 } 
+             } 
+              
+             document.getElementById('tsText').innerHTML = TS; 
+             textTs(); 
+         } 
+         // Pages By Klpbbs 
+         function textTs(){ 
+             var Tstext = document.getElementById('tsText'); 
+             if (Tstext.innerHTML != "本页面用于生成我的世界材质、行为等资源配置文件中的UUID！"){ 
+                 if (jc != 1){ 
+                     jc = 1; 
+                     setTimeout(function() {document.getElementById('tsText').innerHTML ="本页面用于生成我的世界材质、行为等资源配置文件中的UUID！";jc = 0;}, 3000); 
+                 }        
+             } 
+         } 
+         // Pages By Klpbbs 
+         function generateUUID() { 
+             var d = new Date().getTime(); 
+             if (window.performance && typeof window.performance.now === "function") { 
+                 d += performance.now();  
+             } 
+             var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) { 
+             var r = (d + Math.random() * 16) % 16 | 0; 
+             d = Math.floor(d / 16); 
+             return (c == 'x' ? r : (r & 0x3 | 0x8)).toString(16); 
+             }); 
+         return uuid; 
+         } 
+         // Pages By Klpbbs 
+         function copyText(text){  
+             text = document.getElementById('Text').innerHTML; 
+             var tag = document.createElement('textarea'); 
+             tag.setAttribute('id', 'cp_hgz_input'); 
+             tag.value = text; 
+             document.getElementsByTagName('body')[0].appendChild(tag); 
+             document.getElementById('cp_hgz_input').select(); 
+             document.execCommand('copy'); 
+             document.getElementById('cp_hgz_input').remove(); 
+             alert('复制成功'); 
+     } 
+     </script> 
+     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script> 
+     <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script> 
+     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+ </body> 
+ </html>

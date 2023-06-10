@@ -12,4 +12,4 @@ https://linexic.github.io/love.html
 
 https://huo-rongyuan.mysxl.cn/
 
-几乎涵盖所有新手常用html标签，如img图片插入，a href网页跳转，背景调色等
+几乎涵盖所有新手常用html标签，如img图片插入，a href网页跳转，背景调色，文字颜色等

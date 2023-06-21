@@ -1,14 +1,49 @@
-a {
-  text-decoration: none;
-}
+/* 设置整个页面的背景颜色 */
 body {
-    background: rgb(129, 155, 190) url(norho.png);
-    
-    background-attachment: fixed;
-    
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-  }
+  background-color: #f1f1f1;
+}
 
+/* 设置页面标题的样式 */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
+/* 设置导航栏的样式 */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+/* 设置导航链接的样式 */
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* 设置按钮的样式 */
+.button {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* 当鼠标悬停在按钮上时改变按钮的背景颜色 */
+.button:hover {
+  background-color: #3e8e41;
+}

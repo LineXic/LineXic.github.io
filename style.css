@@ -1,5 +1,14 @@
 a {
   text-decoration: none;
 }
+body {
+    background: rgb(129, 155, 190) url(norho.png);
+    
+    background-attachment: fixed;
+    
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
 
 

@@ -4,12 +4,17 @@ a{
  color: #0066FF;
 }
 
-body { 
-  background-image: url(norho.png); 
-  background-position: center center; 
-  background-repeat: no-repeat; 
-  /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */ 
-  background-attachment: fixed; 
-  background-size: cover; 
-  background-color: #464646; 
-}
+.bg-image,
+      .inner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 450px;
+        height: 253px;
+        z-index: -1;
+      }
+      .inner {
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px);
+      }
+

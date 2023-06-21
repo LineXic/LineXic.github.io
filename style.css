@@ -4,12 +4,12 @@ a{
  color: #0066FF;
 }
 
-	body {
-		background-image: url(norho.png);
-		background-position: center center;
-		background-repeat: no-repeat;
-		/* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
-		background-attachment: fixed;
-		background-size: cover;
-		background-color: #464646;
-	}
+body { 
+  background-image: url(norho.png); 
+  background-position: center center; 
+  background-repeat: no-repeat; 
+  /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */ 
+  background-attachment: fixed; 
+  background-size: cover; 
+  background-color: #464646; 
+}

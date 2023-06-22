@@ -14,3 +14,9 @@
  img {
   border-radius: 50%;
 }
+ button {
+  background-color: transparent; /* 设置透明背景色 */
+  border-radius: 10px; /* 设置圆角半径 */
+  padding: 10px; /* 设置内边距增加空间 */
+  opacity: 0.5; /* 设置透明度为50% */
+}

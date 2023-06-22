@@ -9,9 +9,8 @@
     background-size: cover;
     width: 100%;
     height: 100%;
-  }
  }
  img {
-  border-radius: 50%;
+  border-radius: 50%;/* 图片圆角 */
 }
  

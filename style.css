@@ -1,14 +1,17 @@
-a{         
-  text-decoration: none; /* 去除a标签下划线 */
-  color: #0066FF;/* a标签颜色 */ 
+a{          
+   text-decoration: none; /*去除a标签下划线*/ 
+   color: #0066FF;  /*标签颜色*/
+  }    
+  body {  
+   background-image: url(nacho.png);  /* 图片文件名*/
+   background-position: center center;  
+   background-repeat: no-repeat;  
+   /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */  
+   background-attachment: fixed;  
+   background-size: cover;  
+   background-color: #464646; /* 当背景没被加载时背景纯色 */ 
  }   
-#backdrop1{ 
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    z-index: -1;
   img {  
-    border-radius: 50%;/* 图片圆角 */
+    border-radius: 50%;  /*图片圆角*/
   }  
  
-

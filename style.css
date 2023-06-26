@@ -11,7 +11,5 @@ a{
    background-size: cover;  
    background-color: #464646; /* 当背景没被加载时背景纯色 */ 
  }   
-  img {  
-    border-radius: 50%;  /*图片圆角*/
-  }  
+ 
  

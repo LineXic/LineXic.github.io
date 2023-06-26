@@ -1,10 +1,14 @@
 a{         
-  text-decoration: none; 
-  color: #0066FF; 
+  text-decoration: none; /* 去除a标签下划线 */
+  color: #0066FF;/* a标签颜色*/ 
  }   
 #backdrop1{ 
     width: 100vw;
     height: 100vh;
     position: fixed;
     z-index: -1;
+  img {  
+    border-radius: 50%;/* 图片圆角 */
+  }  
+ 
 

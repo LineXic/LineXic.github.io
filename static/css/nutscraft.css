@@ -121,26 +121,26 @@ a:hover {
 /* 各区块 */
 
 .Box1 {
-    background: url(./static/css/image/bg1.png) no-repeat center center;
+    background: url(./image/bg1.png) no-repeat center center;
 }
 
 .Box2 {
-    background: url(./static/css/image/bg2.png) no-repeat center center;
+    background: url(./image/bg2.png) no-repeat center center;
     margin-top: -400px;
 }
 
 .Box3 {
-    background: url(./static/css/image/bg3.png) no-repeat center center;
+    background: url(./image/bg3.png) no-repeat center center;
     margin-top: -10px;
 }
 
 .Box4 {
-    background: url(./static/css/image/bg4.png) no-repeat center center;
+    background: url(./image/bg4.png) no-repeat center center;
     margin-top: -10px;
 }
 
 .Box5 {
-    background: url(./static/css/imagebg5.png) no-repeat center center;
+    background: url(./imagebg5.png) no-repeat center center;
 }
 
 .nutscraftBox {
@@ -151,7 +151,7 @@ a:hover {
 /* 首页标题 */
 
 .Box1-title {
-    background-image: linear-gradient(to left, rgba(255, 255, 255, .2), rgba(255, 255, 255, .2)), url(./static/css/image/oak_planks.png);
+    background-image: linear-gradient(to left, rgba(255, 255, 255, .2), rgba(255, 255, 255, .2)), url(./image/oak_planks.png);
     width: 600px;
     height: auto;
     color: black;
@@ -316,7 +316,7 @@ a:hover {
     display: inline-block;
     width: 60px;
     height: 60px;
-    background: url(./static/css/image/g.jpg) no-repeat;
+    background: url(./image/g.jpg) no-repeat;
     background-size: 100% 100%;
     border-radius: 50%;
     margin-right: 30px;
@@ -440,7 +440,7 @@ a:hover {
 .Box5-Join {
     width: 600px;
     height: auto;
-    background: url(./static/css/image/map_background_checkerboard.png);
+    background: url(./image/map_background_checkerboard.png);
     background-size: 100% 100%;
     position: relative;
     top: 300px;
@@ -466,7 +466,7 @@ a:hover {
     display: inline-block;
     width: 40px;
     height: 40px;
-    background-image: url(./static/css/image/bread.png);
+    background-image: url(./image/bread.png);
     background-size: 100% 100%;
     vertical-align: middle;
     margin-right: 10px;
@@ -479,7 +479,7 @@ a:hover {
     margin-top: -410px;
     width: 100%;
     height: 100px;
-    background: url(./static/css/image/demo_background.png) no-repeat;
+    background: url(./image/demo_background.png) no-repeat;
     background-size: 100% 100%;
     text-align: center;
     padding-top: 50px;
@@ -680,4 +680,4 @@ a:hover {
     .Box5-Join-talk {
         margin-left: 30px;
     }
-}
+}bu

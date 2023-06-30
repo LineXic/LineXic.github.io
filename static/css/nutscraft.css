@@ -125,7 +125,7 @@ a:hover {
 }
 
 .Box2 {
-    background: url(..css/image/bg2.png) no-repeat center center;
+    background: url(static/css/image/bg2.png) no-repeat center center;
     margin-top: -400px;
 }
 
@@ -479,7 +479,7 @@ a:hover {
     margin-top: -410px;
     width: 100%;
     height: 100px;
-    background: url(static/css/image/demo_background.png) no-repeat;
+    background: url(static/css/imagedemo_background.png) no-repeat;
     background-size: 100% 100%;
     text-align: center;
     padding-top: 50px;

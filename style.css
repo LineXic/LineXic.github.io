@@ -12,7 +12,7 @@ a{
    background-color: #464646; /* 当背景没被加载时背景纯色 */ 
  }  
 
- #button_1 {
+ .button_1 {
   border-radius: 10px;   /* 圆角半径 */
   background-color: rgba(0, 0, 0, 0.5);   /* 透明背景色 */
   color: white;   /* 文字颜色 */

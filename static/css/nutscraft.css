@@ -151,7 +151,7 @@ a:hover {
 /* 首页标题 */
 
 .Box1-title {
-    background-image: linear-gradient(to left, rgba(255, 255, 255, .2), rgba(255, 255, 255, .2)), url(..css/image/oak_planks.png);
+    background-image: linear-gradient(to left, rgba(255, 255, 255, .2), rgba(255, 255, 255, .2)), url(./image/oak_planks.png);
     width: 600px;
     height: auto;
     color: black;
@@ -316,7 +316,7 @@ a:hover {
     display: inline-block;
     width: 60px;
     height: 60px;
-    background: url(static/css/image/g.jpg) no-repeat;
+    background: url(./image/g.jpg) no-repeat;
     background-size: 100% 100%;
     border-radius: 50%;
     margin-right: 30px;

@@ -16,8 +16,14 @@ layout: default
 <!--//添加评论系统-->
 <link rel="stylesheet" href="../../../../css/gitalk.css">
     <script src="../../../../js/gitalk.min.js"></script>
-<!--    打赏-->
+
+<link
+    rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css"
+  />
+
+<!-- 打赏-->
 <link href="/css/reward.css?v=6.2.0" rel="stylesheet" type="text/css" />
+
 <!-- 大图浏览 -->
 <link href="../../../../css/imageContent.css" rel="stylesheet">
 
@@ -83,14 +89,14 @@ layout: default
 
 
 				{{ content }}
-
+<!-- 
                 <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a><a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a></div>
                 <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{},"image":{"viewList":["weixin","qzone","tsina","tqq","twi","fbook"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["weixin","qzone","tsina","tqq","twi","fbook"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-
+ -->
                 <hr style="visibility: hidden;">
-
+		   
             <!-- 打赏功能 -->
-            <!-- <div>
+             <div>
                 <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
                 <div>☛兄dei，请我喝杯茶☚</div>
                 <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
@@ -117,15 +123,32 @@ layout: default
                 </div>
                 </div>
                 
-            </div> -->
-            
+            </div>
+<div id="article-info">
+  <!-- 评论及阅读量定义 -->
+  <script async src="https://busuanzi.9420.ltd/js"></script>
+阅读量 <span id="busuanzi_page_pv"></span> 次
+  <!-- vercel托管waline评论url -->
+</div>
+
+ <div id="waline"></div>
+  <script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+    init({
+      el: '#waline',
+      pageview: true, // 浏览量统计
+      serverURL: 'https://waline-xic-pinglun.linexic.top/',
+    });
+  </script>
+    
 
    <!--  上一篇或者下一篇post按钮 -->
                 <ul class="pager">
                     {% if page.previous.url %}
                     <li class="previous">
                         <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
-                        Previous<br>
+                        上一篇<br>
                         <span>{{page.previous.title}}</span>
                         </a>
                     </li>
@@ -133,7 +156,7 @@ layout: default
                     {% if page.next.url %}
                     <li class="next">
                         <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
-                        Next<br>
+                        下一篇<br>
                         <span>{{page.next.title}}</span>
                         </a>
                     </li>
@@ -242,7 +265,7 @@ layout: default
     
 </article>
 <!-- 大图浏览 -->
-<!-- {% include clickable-image.html %} -->
+ {% include clickable-image.html %}
 
 <!-- Add support for Mathjax by Voleking-->
 {% if page.mathjax %}

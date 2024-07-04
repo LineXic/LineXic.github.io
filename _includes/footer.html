@@ -93,27 +93,64 @@
                     {% endif %}
                 </ul>
                 <p class="copyright text-muted">
-<!--                  本站总访问量<span id="busuanzi_value_site_pv"></span>次，本站访客数<span id="busuanzi_value_site_uv"></span>人次，本文总阅读量<span id="busuanzi_value_page_pv"></span>次-->
-                    <span class="site-uv" title="总点击人数">
-                    <img src="/img/vendor/octicons/svg/person.svg" width="10" height="16">
-                    <span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
-                    &nbsp;&nbsp;|&nbsp;&nbsp;
-                    <span class="site-pv" title="总点击量">
-                    <img src="/img/vendor/octicons/svg/eye.svg" width="16" height="16">
-                    <span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span>
-                    &nbsp;&nbsp;|&nbsp;&nbsp;
-                    <span class="page-pv"title="本页面点击人数">
-                    <img src="/img/vendor/octicons/svg/file-text.svg" width="12" height="16">
-                    <span class="busuanzi-value" id="busuanzi_value_page_pv"></span></span>
-                    <br>
+
+<img src="https://icp.gov.moe/images/ico64.png" width="20" height="20"><a href="https://icp.gov.moe/?keyword=20240181" target="_blank">萌ICP备20240181号</a><br>
+<span id="sitetime"></span>
+<script language=javascript>
+    function siteTime(){
+        window.setTimeout("siteTime()", 1000);
+        var seconds = 1000;
+        var minutes = seconds * 60;
+        var hours = minutes * 60;
+        var days = hours * 24;
+        var years = days * 365;
+        var today = new Date();
+        var todayYear = today.getFullYear();
+        var todayMonth = today.getMonth()+1;
+        var todayDate = today.getDate();
+        var todayHour = today.getHours();
+        var todayMinute = today.getMinutes();
+        var todaySecond = today.getSeconds();
+        /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+        year - 作为date对象的年份，为4位年份值
+        month - 0-11之间的整数，做为date对象的月份
+        day - 1-31之间的整数，做为date对象的天数
+        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+        minutes - 0-59之间的整数，做为date对象的分钟数
+        seconds - 0-59之间的整数，做为date对象的秒数
+        microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+        var t1 = Date.UTC(2023,09,02,00,00,00); //北京时间2016-12-1 00:00:00
+        var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+        var diff = t2-t1;
+        var diffYears = Math.floor(diff/years);
+        var diffDays = Math.floor((diff/days)-diffYears*365);
+        var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+        var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+        var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+        document.getElementById("sitetime").innerHTML="匍匐爬行"+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+    }
+    siteTime();
+</script>
+<br>
+
+
                     Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
                     <br>
-                    Power by <a href="https://jekyllcn.com/docs/home/">Jekyll</a> | 本站源码 <a href="https://github.com/WillingSasi/WillingSasi.github.io">WillingSasi</a>
-                    <iframe
-                        style="margin-left: 2px; margin-bottom:-5px;"
-                        frameborder="0" scrolling="0" width="100px" height="20px"
-                        src="https://ghbtns.com/github-btn.html?user=WillingSasi&repo=WillingSasi.github.io&type=star&count=true" >
-                    </iframe>
+                    Power by <a href="https://linexic.top/">LineXic</a> <br>
+                    <a href="https://blog.csdn.net/m0_73230319?">
+  <img width="25" src="https://ts1.cn.mm.bing.net/th/id/R-C.2a932441dd0f785a3d2813c6198998dd?rik=yW78wW2nkdrw8Q&riu=http%3a%2f%2fpic.2265.com%2fupload%2f2017-7%2f201772598294888.png&ehk=ZyTimiwbIKnzPImq7nY8plTTZKjQtBktmyUef%2b4WI4U%3d&risl=&pid=ImgRaw&r=0"alt="CSDN"  />
+</a>
+||
+ <a href="http://afdian.net/a/LineXic">
+  <img width="25" src="https://tse1-mm.cn.bing.net/th/id/OIP-C.P7Tlj6hqpuSbLQ1AqQ8mkQHaHa?dpr=3&pid=ImgDetMain"alt="爱发电"  />
+</a>
+||
+<a href="https://space.bilibili.com/1015205011">
+  <img width="25" src="https://ts1.cn.mm.bing.net/th/id/R-C.5f7657549f4bd16d08b56ccad794f01a?rik=%2bXBzOkKWIBMU8A&riu=http%3a%2f%2fwww.kuaipng.com%2fUploads%2fpic%2fw%2f2020%2f07-20%2f89190%2fwater_89190_698_698_.png&ehk=b6FaBHz%2bTBstG7fZg%2fGSVXCcCSqOw3pUcMIZr6QUdZg%3d&risl=&pid=ImgRaw&r=0"alt="bilibili"  />
+</a>
+
+
+                    
                 </p>
             </div>
             
@@ -121,7 +158,17 @@
     </div>
 </footer>
 <!--网站统计-->
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?9ecfed90ae982b01f0b7cb1770447760";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
 
 <!-- jQuery -->
 <script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>

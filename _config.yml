@@ -1,11 +1,11 @@
 # Site settings
-title: WS Blog
-SEOTitle: WS Blog | 华子的博客
-header-img: img/home-bg.jpg
-email: 15522578697@163.com
-description: "程序、设计、拍照、探索 | liuguanhua & Photography Lover，Software Engineer | 这里是 华子 @willingsasi liuguanhua 的个人博客，无限进步 💪 "
-keyword: "liuguanhua, 华子, 个人网站, 程序设计, 拍照摄影, 互联网, WLB, WS Blog, 华子的博客"
-url: "http://liuguanhua.xyz"              # your host, for absolute URL
+title: LineXic书屋
+SEOTitle: LineXic书屋
+header-img: "img/tag-bg.jpg"
+email: linexic@yeah.net
+description: "LineXic博客,书屋,前端分享,笔记本,学习进步"
+keyword: "LineXic,linexic,blog,web,博客,前端,学习进步,书屋"
+url: "http://linexic.top"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
@@ -13,9 +13,10 @@ future: true
 
 # SNS settings
 RSS: false
-weibo_username:     #u/1870966724
-github_username:    WillingSasi
-bilibili_username:    46253663
+weibo_username:     u/7463181651
+github_username:    LineXic
+twitter_username: LineXic
+zhihu_username: bei-hai-95-34-83
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
@@ -34,12 +35,15 @@ b2t: true
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
 # make sure you have this gem installed
-# `$ gem install jekyll-paginate`
+# `gem install jekyll-paginate`
+
 plugins: 
   - jekyll-paginate
+  - jekyll-admin
 # plugins: [jekyll-sitemap]
 gems:
   - jekyll-sitemap
+
 paginate_path: "page:num"   #分页页面路径格式
 
 # Markdown settings
@@ -58,32 +62,27 @@ kramdown:
 
 # Comment
 
+
 # Netease settings
 netease_comment: false
 
-gitalk:
-   enable: true
-   owner: willingsasi
-   repo: willingsasi.github.io
-   clientID: c82ebab999f684055a7b
-   clientSecret: 0c551be36f3ae66808ef1d1dcd1cf8226e6b113d
-   admin: WillingSasi
 
 
 # Analytics settings
 # Baidu Analytics 
-ba_track_id: '8d45ffbbda9cde813ee9011ec9f1caa5'
+# ba_track_id: 9ecfed90ae982b01f0b7cb1770447760
 
 # Google Analytics
-# ga_track_id: 'UA-124793396-1'            # Format: UA-xxxxxx-xx
+# ga_track_id: G-5Z26G18PTZ
+# Format: linexic.top
 # ga_domain: auto
 
 
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: “写写代码，做做测试，拍拍照片。世界那么大，多玩玩看看。"
-sidebar-avatar: /img/me.jpeg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: “难离难舍，想抱紧些"
+sidebar-avatar: /img/logo.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
@@ -105,5 +104,21 @@ page-mathjax: false
 
 
 # Friends
-friends: [
-]
+friends:   [
+    { title: "承挨博客", href: "https://blog.chengai77a6b.top/" },
+    { title: "承挨汉化组", href: "https://chengai77a6b.top/" },
+    { title: "LineXic图床", href: "https://img.linexic.top/" },
+    { title: "LineXic-GH", href: "https://gh.linexic.top/" },
+    { title: "何曦辞的个人小站", href: "http://www.hexichi.love/" },
+    { title: "Otstar Lin", href: "https://blog.ixk.me/" },
+    { title: "LiteCat - 博客", href: "https://www.litecat.xyz/" },
+    { title: "Mjs's blog", href: "https://blog.mugzx.top/" },
+    { title: "阮一峰的网络日志", href: "http://www.ruanyifeng.com/blog/" },
+    { title: "梦泽不是梦", href: "https://www.mengze2.cn/" },
+    { title: "KEVIN'S BLOG", href: "https://blog.kevinchu.top" },
+    { title: "故事的程序员", href: "https://blog.lichenghao.cn" },
+    { title: "Tony’s Blog", href: "https://blog.iamsjy.com/" },
+    { title: "愧作", href: "https://kuizuo.cn/" },
+    { title: "上冬十二", href: "https://oragekk.me/" },
+    { title: "白泽", href: "https://blog.baize.host/"},
+    ]

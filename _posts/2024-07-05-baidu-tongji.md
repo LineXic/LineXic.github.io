@@ -27,7 +27,6 @@ tags:
 关于百度统计hux的主题是内置了的，需要我们在`_config.yml`下有专门的字段，原文档介绍如下
 
 > 网站分析，现在支持百度统计和Google Analytics。需要去官方网站注册一下，然后将返回的code贴在下面：
-
 # Baidu Analytics
 ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 

@@ -13,13 +13,11 @@ tags:
 # 百度统计的应用
 
 ![百度统计](https://img.linexic.top/file/6ef77ee8f00e0fc3cb469.jpg)
-
 ## 灵感
 
 一次看到了承挨博客脚页下的博客统计，感觉很美观，就像着自己弄一个
 ![灵感](https://img.linexic.top/file/ff6fecd96e598fb740d07.jpg)
 最开始想着是用[不蒜子](https://busuanzi.ibruce.info/)计数器，可发现了一个诟病就是：网页每次刷新都会提示访问量加一，这样感觉有点假，况且也无法做到像上图那样每一个都面面俱到，折腾了好一会我决定开始转变思路
-
 # 百度统计
 
 我就想既然主页面没法弄，那我就从"后端"入手即百度统计
@@ -29,7 +27,6 @@ tags:
 > 网站分析，现在支持百度统计和Google Analytics。需要去官方网站注册一下，然后将返回的code贴在下面：
 # Baidu Analytics
 ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
-
 # Google Analytics
 ga_track_id: 'UA-49627206-1'            # 你用Google账号去注册一个就会给你一个这样的id
 ga_domain: huangxuan.me		

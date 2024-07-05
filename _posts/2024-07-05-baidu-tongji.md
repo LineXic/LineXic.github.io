@@ -25,11 +25,15 @@ tags:
 关于百度统计hux的主题是内置了的，需要我们在`_config.yml`下有专门的字段，原文档介绍如下
 
 > 网站分析，现在支持百度统计和Google Analytics。需要去官方网站注册一下，然后将返回的code贴在下面：
+
+```yml
 # Baidu Analytics
 ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 # Google Analytics
-ga_track_id: 'UA-49627206-1'            # 你用Google账号去注册一个就会给你一个这样的id
-ga_domain: huangxuan.me		
+# ga_track_id: 'UA-49627206-1'
+你用Google账号去注册一个就会给你一个这样的id
+# ga_domain: huangxuan.me		
+```
 
 看完文档我打开[百度统计](https://tongji.baidu.com)，首先登录，登录完之后点击"新增网站"把我的网址输入了进去，输入后会出现一段统计代码，类似
 

@@ -14,8 +14,6 @@ tags:
 # 前言
 >本教程基于[尚硅谷Web前端教程](https://b23.tv/Dr9IiSP "尚硅谷Web前端教程")发布，你们也可以理解为这是一篇尚硅谷教程的笔记，当然这里也有我自己的一些经验总结****
 
-[![Page Views Count](https://badges.toozhao.com/badges/01HAEVA0YW9VAP4J9EASSW2TF0/green.svg)](https://badges.toozhao.com/stats/01HAEVA0YW9VAP4J9EASSW2TF0 "Get your own page views count badge on badges.toozhao.com")
-
 ## 什么是HTML？
 
 - HTML（Hypertext Markup Langguage）是一个超文本编辑语言

@@ -14,8 +14,6 @@ tags:
 # 前言
 >此教程仅针对Minecraft国际版，并不涉及JAVA/网易版本，此类玩家请退出此文章，寻找其他网站教程进行浏览
 
-[![Page Views Count](https://badges.toozhao.com/badges/01HAEVEHGWJR6V217CZ5MYSGSR/green.svg)](https://badges.toozhao.com/stats/01HAEVEHGWJR6V217CZ5MYSGSR "Get your own page views count badge on badges.toozhao.com")
-
 #### 正式教程（使用版本：1.20.15）
 &：需要准备的物品：
 PC端：你所要自定义的皮肤，Minecraft基岩版

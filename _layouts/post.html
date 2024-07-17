@@ -68,6 +68,31 @@ layout: default
 </header>
 
 <!-- Post Content -->
+
+{% comment %} 置顶文章列表开始 {% endcomment %}
+{% for post in site.posts %}
+{% if post.top %}
+{% if paginator.page == 1 %}
+{% comment %} 文章列表代码开始 {% endcomment %}
+<!-- 在这里写文章列表代码 -->
+{% comment %} 文章列表代码结束 {% endcomment %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% comment %} 置顶文章列表结束 {% endcomment %}
+
+
+{% comment %} 普通文章列表开始 {% endcomment %}
+{% for post in paginator.posts %}
+{% if post.top %}
+{% else %}
+{% comment %} 文章列表代码开始 {% endcomment %}
+<!-- 在这里写文章列表代码 -->
+{% comment %} 文章列表代码结束 {% endcomment %}
+{% endif %}
+{% endfor %}
+{% comment %} 普通文章列表结束 {% endcomment %}
+
 <article>
     <div class="container">
         <div class="row">
@@ -298,7 +323,7 @@ layout: default
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        dsq.src = '/LineXic/LineXic.github.io/edit/main/_layouts/post.html' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>

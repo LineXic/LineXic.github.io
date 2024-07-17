@@ -6,5 +6,3 @@ gem "rake"
 
 gem "webrick", "~> 1.7"
 
-gem 'posts-lastmod-hook', group: :jekyll_plugins
-

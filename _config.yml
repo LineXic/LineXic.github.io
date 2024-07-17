@@ -39,10 +39,11 @@ b2t: true
 
 plugins: 
   - jekyll-paginate
-  - jekyll-admin
+  - posts-lastmod-hook.rb
 # plugins: [jekyll-sitemap]
 gems:
   - jekyll-sitemap
+  - posts-lastmod-hook
 
 paginate_path: "page:num"   #分页页面路径格式
 

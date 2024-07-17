@@ -69,30 +69,6 @@ layout: default
 
 <!-- Post Content -->
 
-{% comment %} 置顶文章列表开始 {% endcomment %}
-{% for post in site.posts %}
-{% if post.top %}
-{% if paginator.page == 1 %}
-{% comment %} 文章列表代码开始 {% endcomment %}
-<!-- 在这里写文章列表代码 -->
-{% comment %} 文章列表代码结束 {% endcomment %}
-{% endif %}
-{% endif %}
-{% endfor %}
-{% comment %} 置顶文章列表结束 {% endcomment %}
-
-
-{% comment %} 普通文章列表开始 {% endcomment %}
-{% for post in paginator.posts %}
-{% if post.top %}
-{% else %}
-{% comment %} 文章列表代码开始 {% endcomment %}
-<!-- 在这里写文章列表代码 -->
-{% comment %} 文章列表代码结束 {% endcomment %}
-{% endif %}
-{% endfor %}
-{% comment %} 普通文章列表结束 {% endcomment %}
-
 <article>
     <div class="container">
         <div class="row">

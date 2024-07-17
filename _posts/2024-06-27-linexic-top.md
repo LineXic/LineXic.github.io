@@ -8,8 +8,7 @@ header-img: "img/xiaowangzi3.jpg"
 catalog:    true
 tags:
     - 恰饭
-    - 接单
-top: true    
+    - 接单    
 ---
 
 # 汉化接单

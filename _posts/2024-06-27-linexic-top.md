@@ -17,7 +17,7 @@ tags:
 - [LineXic](https://klpbbs.com/?1114580)
 - [LineXics](https://klpbbs.com/?686976)
 
-这两个账号里面都是我的汉化作品，其中「LineXic」不更新了，也就是说弃号了，「LineXic」还在活跃，这是我的接单报告
+这两个账号里面都是我的汉化作品，其中「LineXics」不更新了，也就是说弃号了，「LineXic」还在活跃，这是我的接单报告
 ![接单介绍](https://pic.imgdb.cn/item/64be052c1ddac507cc91f877.jpg)
 
 # 建站

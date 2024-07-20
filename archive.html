@@ -1,6 +1,16 @@
- 
+---
+layout: page
+title: "👀归档"
+description: "「用力活着用力爱哪怕肝脑涂地」"
+header-img: "img/xiaowangzi2.jpg"
+multilingual: true
+--- 
 
-{% for post in site.posts %}
+<html>
+<body>
+  <ul>
+    {% for post in site.posts %}
+      <li>
         <a href="{{ post.url }}">{{ post.title }}</a>
         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
       </li>

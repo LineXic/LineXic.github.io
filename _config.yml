@@ -64,6 +64,13 @@ kramdown:
 
 # Comment
 
+gitalk:
+   enable: true
+   owner: LineXic
+   repo: LineXic.github.io
+   clientID: 4247b9ff0479dc132182
+   clientSecret: cf0d2e8bcb14d85635dfea2fe13d8c8e24e522ca
+   admin: LineXic
 
 # Netease settings
 netease_comment: false
